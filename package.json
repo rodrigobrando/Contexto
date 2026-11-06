@@ -1,0 +1,25 @@
+{
+  "name": "contexto",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "postinstall": "electron-rebuild -f -w better-sqlite3",
+    "start": "electron .",
+    "rebuild": "electron-rebuild -f -w better-sqlite3"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "Contexto: agregador de notícias com resumo e tradução para português via OpenRouter",
+  "dependencies": {
+    "@mozilla/readability": "^0.6.0",
+    "better-sqlite3": "^13.0.3",
+    "electron": "^45.2.3",
+    "jsdom": "^29.1.1",
+    "rss-parser": "^3.13.0"
+  },
+  "devDependencies": {
+    "@electron/rebuild": "^4.2.1"
+  },
+  "private": true,
+  "productName": "Contexto"
+}
